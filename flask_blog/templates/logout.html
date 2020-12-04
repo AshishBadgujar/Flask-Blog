@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Log out{% endblock title %}
+
+{% block body %}
+<div class="blogCard">
+    <h2> You are successfully Logged out</h2>
+    <div class="border-top pt-3 mt-2">
+    <small class="text-muted">
+    Want to Log in again ?<a href="{{url_for('login')}}" class="ml-2">Log in</a>
+    </small>
+    </div>
+</div>
+{% endblock body %}
+

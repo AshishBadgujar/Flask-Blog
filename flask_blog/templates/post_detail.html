@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}post-Detail{% endblock title %}
+
+{% block body %}
+
+<div class="card blogCard">
+  <div class="card-body">
+    <h2>{{post.title}}</h2>
+    <p>{{post.content}}</p>
+    <small class="text-muted">
+    <p><span>- </span>{{post.author}}</p>
+    </small>
+    {% if current_user.is_authenticated %}
+    <a href="{{post._id}}/update"><button class="btn btn-outline-info mr-2">Update</button></a>
+    <a href="{{post._id}}/delete"><button class="btn btn-outline-danger">Delete</button></a>
+    {% endif %}
+  </div>
+</div>
+    
+{% endblock body %}

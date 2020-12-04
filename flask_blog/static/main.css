@@ -1,0 +1,26 @@
+.right{
+    margin-left:25rem;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+.innercont{
+    width: 100%;
+}
+.container .Sidebar{
+    width: 22rem;
+    margin-inline-end: 0rem;
+    margin-top: 2rem;
+}
+.blogCard{
+    width: 60%;
+    margin-top: 2rem;
+}
+#thumb{
+    max-width: 27.3rem;
+    max-height: 100%;
+    margin-bottom: 1.5rem;
+}

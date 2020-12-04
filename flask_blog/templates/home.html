@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+<div class="blogCard">
+    
+</div>
+{% for post in posts %} 
+<div class="card blogCard">
+   <div class="card-body">
+    <a href="/post/{{post._id}}"><h3>{{post.title}}</h3></a>
+    <p>{{post.content}}</p>
+  </div> 
+</div>
+ {% endfor %}  
+
+{% endblock body %}
